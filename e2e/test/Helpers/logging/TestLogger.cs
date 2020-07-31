@@ -56,21 +56,21 @@ namespace Microsoft.Azure.Devices.E2ETests
             EventSourceTestLogger.Log.TestMessage(message);
 
             // Log to Application insights
-            if (_telemetryClient != null)
+            /*if (_telemetryClient != null)
             {
                 IDictionary<string, string>[] bagsToMerge = new[] { _commonProperties, Properties, extraProperties };
                 _telemetryClient.TrackTrace(message, severity, MergePropertyBags(bagsToMerge));
-            }
+            }*/
         }
 
         public void Event(string eventName, IDictionary<string, string> extraProperties = null)
         {
             // Log event to Application insights
-            if (_telemetryClient != null)
+            /*if (_telemetryClient != null)
             {
                 IDictionary<string, string>[] bagsToMerge = new[] { _commonProperties, Properties, extraProperties };
                 _telemetryClient.TrackEvent(eventName, MergePropertyBags(bagsToMerge));
-            }
+            }*/
         }
 
         /// <summary>
