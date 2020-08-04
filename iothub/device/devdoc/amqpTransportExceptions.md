@@ -10,10 +10,10 @@ Below is the behavior of the SDK on receiving an exception over Amqp transport p
 | amqp:connection:forced error | AmqpIoTResourceException | SDK will retry, this exception will not bubble up to the application directly  |  |
 | amqp:connection:framing-error | AmqpIoTResourceException | SDK will retry, this exception will not bubble up to the application directly  |  |
 | amqp:connection:redirect | AmqpIoTResourceException | SDK will retry, this exception will not bubble up to the application directly  |  |
-| amqp:link:detach-forced | AmqpIoTResourceException | SDK will retry, this exception will not bubble up to the application directly |  |
-| amqp:link:redirect | AmqpIoTResourceException | SDK will retry, this exception will not bubble up to the application directly |  | 
+| amqp:link: detach-forced | AmqpIoTResourceException | SDK will retry, this exception will not bubble up to the application directly |  |
+| amqp:link: redirect | AmqpIoTResourceException | SDK will retry, this exception will not bubble up to the application directly |  | 
 | amqp:link stolen | AmqpIoTResourceException | SDK will retry, this exception will not bubble up to the application directly |  |
-| amqp:link:transfer-limit-exceeded | AmqpIoTResourceException | SDK will retry, this exception will not bubble up to the application directly |  |
+| amqp:link: transfer-limit-exceeded | AmqpIoTResourceException | SDK will retry, this exception will not bubble up to the application directly |  |
 | amqp:resource-locked | AmqpIoTResourceException | SDK will retry, this exception will not bubble up to the application directly |  |
 | amqp:session:errant-link | AmqpIoTResourceException | SDK will retry, this exception will not bubble up to the application directly |  |
 | amqp:session:handle-in-use | AmqpIoTResourceException | SDK will retry, this exception will not bubble up to the application directly |  |
